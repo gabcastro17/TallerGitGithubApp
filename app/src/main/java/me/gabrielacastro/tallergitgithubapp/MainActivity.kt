@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -21,8 +22,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import me.gabrielacastro.tallergitgithubapp.ui.theme.TallerGitGithubAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -42,7 +46,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun parte1(){
     Column(
-        modifier = Modifier.padding(60.dp).fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     )
     {
@@ -50,7 +54,109 @@ fun parte1(){
         Image(
             painter = painter,
             contentDescription = "Gabriela Castro",
-            modifier = Modifier.width(150.dp).clip(CircleShape)
+            modifier = Modifier.padding(top = 50.dp).width(150.dp).clip(CircleShape)
         )
+        Text(
+            text = "Gabriela Castro",
+            fontSize = 30.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    top = 30.dp,
+                    bottom = 10.dp,
+                    start = 30.dp,
+                    end = 30.dp
+                ),
+            textAlign = TextAlign.Center
+        )
+        Text(
+            text = "Estudiante de Ing. de Sistemas",
+            fontSize = 20.sp,
+            color = Color.Blue,
+            textAlign = TextAlign.Center
+        )
+        HorizontalDivider(
+            color = Color.Gray,
+            modifier = Modifier.padding(15.dp)
+        )
+        Text(
+            text = "Edad",
+            fontSize = 20.sp,
+            color = Color.Gray,
+            textAlign = TextAlign.Left,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier
+                .padding(
+                    top = 20.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "18 Años",
+            fontSize = 20.sp,
+            color = Color.Black,
+            textAlign = TextAlign.Left,
+            modifier = Modifier
+                .padding(
+                    top = 5.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "Correo",
+            fontSize = 20.sp,
+            color = Color.Gray,
+            textAlign = TextAlign.Left,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier
+                .padding(
+                    top = 20.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "gcastro218@unab.edu.co",
+            fontSize = 20.sp,
+            color = Color.Blue,
+            textAlign = TextAlign.Left,
+            modifier = Modifier
+                .padding(
+                    top = 5.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "Ciudad",
+            fontSize = 20.sp,
+            color = Color.Gray,
+            textAlign = TextAlign.Left,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier
+                .padding(
+                    top = 20.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "Bucaramanga",
+            fontSize = 20.sp,
+            color = Color.Black,
+            textAlign = TextAlign.Left,
+            modifier = Modifier
+                .padding(
+                    top = 5.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
+
+
     }
 }
