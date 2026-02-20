@@ -156,6 +156,35 @@ fun parte1(){
                 )
                 .fillMaxWidth(),
         )
+        HorizontalDivider(
+            color = Color.Gray,
+            modifier = Modifier.padding(15.dp)
+        )
+        Text(
+            text = "Sobre mi",
+            fontSize = 20.sp,
+            color = Color.Gray,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier
+                .padding(
+                    top = 5.dp,
+                    start = 10.dp,
+                )
+                .fillMaxWidth(),
+        )
+        Text(
+            text = "Estudio ingenieri de sistemas en la unab, me gusta el squash y el voley, mi perro es un rottweiler y se llama zeus y lo amo mucho.",
+            fontSize = 20.sp,
+            color = Color.Black,
+            textAlign = TextAlign.Left,
+            modifier = Modifier
+                .padding(
+                    top = 5.dp,
+                    start = 15.dp,
+                )
+                .fillMaxWidth(),
+        )
 
 
     }
