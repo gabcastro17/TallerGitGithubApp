@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -174,7 +175,7 @@ fun parte1(){
                 .fillMaxWidth(),
         )
         Text(
-            text = "Estudio ingenieri de sistemas en la unab, me gusta el squash y el voley, mi perro es un rottweiler y se llama zeus y lo amo mucho.",
+            text = "Estudio ingenieria de sistemas en la unab, me gusta el squash y el voley, mi perro es un rottweiler y se llama zeus y lo amo mucho.",
             fontSize = 20.sp,
             color = Color.Black,
             textAlign = TextAlign.Left,
@@ -185,6 +186,9 @@ fun parte1(){
                 )
                 .fillMaxWidth(),
         )
+        Column(){
+            Button(onClick = {}, content = {Text(text = "Contactar conmigo")})
+        }
 
 
     }
